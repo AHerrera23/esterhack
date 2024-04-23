@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>abel_herrera23</title>
+</head>
+<body>
+    <!-- titulo de la pagina -->
+    <h1><strong id="titulo"></strong></h1>
+    <!-- foto mia  -->
+    <img src="imges/yo.jpg" alt="foto de abel" width="100px">
+    <hr>
+    <!-- datos sobre mi -->
+    <ul>
+        <li><Strong id="datoNombre"></Strong></li>
+        <li><Strong id="datoEdad"></Strong></li>
+        <li><Strong id="datoFecha"></Strong></li>
+        <li><strong id="datoSigno"></strong></li>
+        <li>
+            <a href="https://www.instagram.com/herreraabel23/">
+                <strong id="datoInsta"></strong>
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/AHerrera23">
+                <strong id="datoGith"></strong>
+            </a>
+        </li>
+    </ul>
+    <hr>
+    <!-- parrafo sobre mi -->
+    <p><strong id="parrafo"></strong></p>
+    <!-- js -->
+    <script>
+        // datos sobre mi
+        let nombre = "Abel Herrera"
+        let fechaDeNacimiento = "6 de Octubre"
+        let edad = 25
+        let signo = "Libra"
+        let ciudad = "Berazategui"
+        let discord = "abel_herrera23"
+        let instagram = "Mi instagram"
+        let gith = "Mi Github"
+        // id de elementos strong
+        let titulo = document.getElementById("titulo")
+        let datoNombre = document.getElementById("datoNombre")
+        let datoEdad = document.getElementById("datoEdad")
+        let datoFecha = document.getElementById("datoFecha")
+        let datoInsta = document.getElementById("datoInsta")
+        let datoSigno = document.getElementById("datoSigno")
+        let datoGith = document.getElementById("datoGith")
+        let parrafo = document.getElementById("parrafo")
+        // confeccion del html
+        // titulo
+        titulo.innerHTML="Cosas sobre mi"
+        // lista
+        datoNombre.innerHTML=nombre
+        datoEdad.innerHTML=edad
+        datoFecha.innerHTML=fechaDeNacimiento
+        datoInsta.innerHTML=instagram
+        datoSigno.innerHTML=signo
+        datoGith.innerHTML=gith
+        // parrafo
+        parrafo.innerHTML="Sobre mi: Me llamo " + nombre + ", vivo en " + ciudad + ", soy estudiante de Diseño Multimedia en la UNLP. Tengo interes enel arte generativo, la programacion y los videojuegos."
+    </script>
+</body>
+</html>
